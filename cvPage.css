@@ -1,0 +1,144 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    background-color: rgba(238, 238, 238, 1);
+    display:flex;
+    justify-content: center;
+}
+.container{
+    width:497px;
+    background-color: rgba(138, 187, 243, 1);
+    position: relative;
+    margin:2rem;
+    box-shadow: inset 0px 3px 2px 1px rgba(3, 9, 72, 0.6);
+   }
+#headerSection{
+    margin-top:5rem;
+    display: flex;
+    flex-direction: row;
+}
+.profile{
+    position: absolute;
+    left:4.3rem;
+    top:5rem;
+}
+.profile img{
+    height:127px;
+    height:143px;
+}
+.right-contents{
+    margin-left:13rem;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+}
+.intro{
+ margin-bottom:5rem;
+
+}
+.intro h1{
+    font-family: Arial Black;
+    font-weight:bolder;
+    letter-spacing: -2px;
+    font-size:1.2rem;
+}
+.contacts{
+    position:absolute;
+    border:1px solid rgba(13, 28, 165, 1) ;
+    font-size: 0.9rem;
+    width:13rem;
+    top:5.5rem;
+    background-color:rgba(138, 187, 243, 1);
+}
+
+#bodySection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:5px;
+}
+#leftPart,#rightPart{
+    background-color: white;
+}
+#leftPart{
+    margin-right:0.7rem;
+    width:180px;
+}
+.subsection{
+    margin-top:2.4rem;
+    margin-left:1rem;
+
+}
+#leftPart .subsection{
+    width:160px;
+}
+
+.subsection .title{
+    color:rgba(138, 187, 243, 1);
+    font-size:small;
+    font-family: Inter;
+}
+.subsection .descriptions{
+    margin-top:0.7rem;
+    margin-bottom: 1rem;
+}
+table tr td{
+    font-family: Inter;
+    margin-left:1rem;
+}
+.desc{
+    padding:0.5rem;
+}
+.subsection .descriptions,li,.descriptions span,.descriptions li{
+    font-size: 1rem;
+    font-family: Inter;
+}
+.descriptions span{
+    font-size: 0.8rem;
+}
+.descriptions b{
+    font-family: inter;
+     font-size:small;
+}
+@media(max-width:600px){
+    .container{
+        width:99%;
+        background-color: rgba(138, 187, 243, 1);
+        margin:0.5rem;
+        box-shadow: inset 0px 3px 2px 1px rgba(3, 9, 72, 0.6);
+       }
+       .profile{
+        margin-left:-2rem;
+        margin-top:-1rem;
+    }
+    .right-contents{
+        margin-left:11rem;
+        display:flex;
+        position: relative;
+     }
+     .contacts{
+        border:1px solid rgba(13, 28, 165, 1) ;
+        font-size: 0.9rem;
+        width:10rem;
+        margin-top:-2rem;
+    }
+    #bodySection{
+        display: flex;
+        flex-direction: column;
+        width:auto;
+    }
+    #leftPart{
+        margin-right:0.7rem;
+        width:96.6vw;
+    }
+    #leftPart .subsection{
+        width:300px;
+    }
+    .subsection{
+        width:80vh;
+        margin-left:2rem;
+    }
+}
